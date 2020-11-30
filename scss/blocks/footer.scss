@@ -27,7 +27,7 @@
     @include flex-center ($wrap: nowrap);
     @include reset;
     justify-content: flex-start;
-    align-items: flex-end;  
+    align-items: flex-end;
     min-height: 25px;
     list-style: none;
 }
@@ -41,7 +41,7 @@
   }
   
   .social-item__icon {
-    display: block;  
+    display: block;
     background-repeat: no-repeat;
     width: 23px;
     height: 23px;
@@ -50,13 +50,13 @@
   }
   
   .social-item__icon--facebook {
-    background-image: url("/img/facebook.svg");
+    background-image: url("../img/facebook.svg");
   }
 
   .social-item__icon--youtube {
-    background-image: url("/img/youtube.svg");
+    background-image: url("../img/youtube.svg");
   }
 
   .social-item__icon--instagram {
-    background-image: url("/img/instagram.svg");
+    background-image: url("../img/instagram.svg");
   }

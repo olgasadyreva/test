@@ -7,6 +7,7 @@
 
 .functionality {
     padding: 60px 30px;
+    max-width: 1740px;
     
     @media (max-width: 1200px) {
         padding: 60px 20px;
@@ -61,19 +62,19 @@
 }
 
 .functionality__item--access {
-    background-image: url("/img/icon1.svg");
+    background-image: url("../img/icon1.svg");
     
 }
 
 .functionality__item--create {
-    background-image: url("/img/icon2.svg");
+    background-image: url("../img/icon2.svg");
 }
 
 .functionality__item--analyse {
-    background-image: url("/img/icon3.svg");
+    background-image: url("../img/icon3.svg");
 }
 .functionality__item--present {
-    background-image: url("/img/icon4.svg");
+    background-image: url("../img/icon4.svg");
 }
 
 .functionality__title {

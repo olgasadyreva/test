@@ -5,6 +5,7 @@
 .partners {
     padding-top: 110px;
     padding-bottom: 70px;
+    
 }
 
 .partners .container{
@@ -28,12 +29,12 @@
 .swiper-container {
     padding-top: 0;
     position: relative;
-    width: 1104px;
+    max-width: 1104px;
   }
 
 
   .swaper-navigation {
-    width: 1104px;
+    max-width: 1104px;
   }
   
   .swiper-slide {
@@ -77,17 +78,9 @@
     @include reset;
     max-width: 1104px;
     list-style: none;
+    height: 130px;
+    align-items: baseline;
     
-  
-    @media (max-width: 1200px) {
-      //width: 944px;
-      //margin-bottom: 89px;
-    }
-    @media (max-width: 1023px) {
-      //width: 280px;
-      //min-height: 292px;
-      //margin-bottom: 24px;
-    }
   }
   
   .slide {
@@ -99,27 +92,6 @@
     &:last-child {
       margin-right: 0;
     }
-  
-    /* &:nth-child(n + 3) {
-      @media (max-width: 1200px) {
-        display: none;
-        margin-right: 0;
-      }
-    } */
-  
-    /* &:nth-child(n + 2) {
-      @media (max-width: 1023px) {
-        display: none;
-      }
-    }  */
-  
-    @media (max-width: 1200px) {
-      width: 455px;
-      margin-right: 34px;
-    }
-    @media (max-width: 1023px) {
-      width: 280px;
-    }
   }
  
   .slide__img {
@@ -128,25 +100,13 @@
     min-width: 165px;  /*если картинка не загрузится*/
     margin-bottom: 20px;
     background-color: #cccccc; /*подложка под картинку*/
+    }
   
-    @media (max-width: 1200px) {
-      min-height: 358px; /*если картинка не загрузится*/
-      min-width: 455px;  /*если картинка не загрузится*/
-      margin-bottom: 0;
-    }
-    @media (max-width: 1023px) {
-      width: 100%;
-      min-height: 252px; /*если картинка не загрузится*/
-      min-width: 280px;  /*если картинка не загрузится*/
-      margin-bottom: 2px;
-    }
-  }
   
   .slider__controls {
     @include flex-center;
     @include reset;
     width: 1104px;
-    //width: 100%;
     margin-top: -55px;
     list-style: none;
   
@@ -176,7 +136,7 @@
   
   .controls-item__btn--prev {
     left: -40px;
-    background-image: url("/img/arrow-left.svg");
+    background-image: url("img/arrow-left.svg");
     background-repeat: no-repeat;
     background-position: center center;
     
@@ -184,7 +144,7 @@
   
   .controls-item__btn--next {
     right: -40px;
-    background-image: url("/img/arrow-right.svg");
+    background-image: url("img/arrow-right.svg");
     background-repeat: no-repeat;
     background-position: center center;
     
@@ -242,5 +202,22 @@
   }
  
  
+ .swiper-pagination {
+   padding-top: 20px;
+  bottom: 0;
+ }
+
+ .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  margin-top: 20px;
+  bottom: 0;
+ }
+
+ .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+   top: 40px;
+ }
+
+ .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+   top: 40px;
+ }
 
 

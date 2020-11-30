@@ -6,7 +6,6 @@ const elements = document.querySelectorAll('.tab__element');
 
 
 elements.forEach(element =>{
-    console.log(element);
     let btn = element.querySelector('.tab__btn');
     let content = element.lastElementChild;
     
@@ -21,8 +20,6 @@ elements.forEach(element =>{
             else {
                 cont.previousElementSibling.querySelector('.tab__btn').classList.toggle('open');
             }
-
-            
         });
         content.classList.toggle('hideText');
     });
@@ -90,41 +87,7 @@ function handleLinkClick(e) {
 //slider
 
 window.onload = function () {
-    /* var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      }); */
 
-    new Swiper(document.querySelector('.swiper-container'), {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        loop: true,
-        slideToClickedSlide: true,
-        pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-          },
-          navigation: {
-            el: '.swiper-navigation',
-            nextEl: 'controls-item__btn--next',
-            prevEl: 'controls-item__btn--prev',
-        },
-       /*  breakpoints: {
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 35
-          },
-      
-              1201: {
-            slidesPerView: 3
-              }
-      
-          } */
-      });
     /* new Swiper(document.querySelector('.swiper-container'), {
         slidesPerView: 4,
         spaceBetween: 0,
@@ -134,30 +97,67 @@ window.onload = function () {
               el: '.swiper-pagination',
               clickable: true,
           },
-          navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-              //nextEl: '.controls-item__btn--next',
-              //prevEl: '.controls-item__btn--prev',
-        },
-        breakpoints: {
-          /* 1024: {
-            slidesPerView: 2,
-            spaceBetween: 35
-          },
-      
-              1201: {
-            slidesPerView: 1
-              } 
-      
-          }
-      }); */
-    
-  //};
-  
-    
-  };
 
+        navigation: {
+            nextEl: '.controls-item__btn--next',
+            prevEl: '.controls-item__btn--prev',
+        },
+
+        breakpoints: {
+            520: {
+                slidesPerView: 1
+            },
+
+            768: {
+                slidesPerView: 2
+            },
+
+            1300: {
+                slidesPerView: 3
+            },
+
+            1400: {
+                slidesPerView: 4
+            }
+        }
+      
+      }); */
+
+  };
+  new Swiper(document.querySelector('.swiper-container'), {
+    slidesPerView: 4,
+    spaceBetween: 0,
+    loop: true,
+    slideToClickedSlide: true,
+    pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        520: {
+            slidesPerView: 1
+        },
+
+        768: {
+            slidesPerView: 2
+        },
+
+        1200: {
+            slidesPerView: 3
+        },
+
+        1400: {
+            slidesPerView: 4
+        }
+    }
+  
+  });
 
 //Навешиваем событие на кнопку разворачивая меню
 btnBurgerElement.addEventListener('click', onBtnShowMenuElemClick);

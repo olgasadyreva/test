@@ -115,7 +115,13 @@ gulp.task('svg', function () {
 
 gulp.task('serve', function () {
     browserSync.init({
-        server: '.'
+        server: {
+            baseDir: 'build'
+            //baseDir: '.'
+          },
+       // server: '.',
+        /* baseDir: '.',
+        index: "index.html" */
     });
     gulp.watch("scss/**/*.scss", gulp.series('sass'));
     gulp.watch("*.html", gulp.series('html'));
@@ -126,7 +132,7 @@ gulp.task('serve', function () {
 
 gulp.task('copy', function () {
    return gulp.src(['fonts/**','img/**', 'js/**', 'css/**', '*.html'], {
-            base: 'build'
+            base: '.'
         })
             .pipe(gulp.dest('build'))
 });

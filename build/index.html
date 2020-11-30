@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="/fonts/Roboto.woff2" as="font">
-    <link rel="preload" href="build/fonts/Sunflower-Medium.woff2" as="font">
-    <link rel="preload" href="build/fonts/Sunflower-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/Roboto.woff2" as="font">
+    <link rel="preload" href="fonts/Sunflower-Medium.woff2" as="font">
+    <link rel="preload" href="fonts/Sunflower-Bold.woff2" as="font">
     <link rel="stylesheet" type="text/css" href="css/swiper.css"> 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Webim</title>
@@ -23,7 +23,7 @@
 				aria-controls="nav-mobile">
             </button>
 
-            <nav d="nav-mobile" class="nav__list js-nav__list">
+            <nav id="nav-mobile" class="nav__list js-nav__list">
                 <a class="nav__link js-nav__link" href="#js-main">Main</a>
 
                 <a class="nav__link js-nav__link" href="#js-features">Features</a>
@@ -127,99 +127,43 @@
 
         <section id="js-partners" class="partners">
             <div class="container">
-
                 <h2 class="title title--partners">Our partners</h2>
-
-                <div class="slider">
-                   
-                        
-                  
-
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <ul class="slider__list">
+                    <div class="slider">
+                        <div class="swiper-container">
+                            <ul class="slider__list swiper-wrapper">
                                 <li class="slide swiper-slide">
                                     <a href="#">
-                                        <img class="slide__image" src="/img/partner1.svg" alt="QUBE renewables">
+                                        <img class="slide__image" src="img/partner1.svg" alt="QUBE renewables">
                                     </a>
                                 </li>
-
+                
                                 <li class="slide swiper-slide">
                                     <a href="#">
-                                        <img class="slide__image" src="/img/partner2.svg" alt="aardvark">
+                                        <img class="slide__image" src="img/partner2.svg" alt="aardvark">
                                     </a>
                                 </li>
-            
+                
                                 <li class="slide swiper-slide">
                                     <a href="#">
-                                        <img class="slide__image" src="/img/partner3.svg" alt="EXELLENCH">
+                                        <img class="slide__image" src="img/partner3.svg" alt="EXELLENCH">
                                     </a>
                                 </li>
-            
+                
                                 <li class="slide swiper-slide">
                                     <a href="#">
-                                        <img class="slide__image" src="/img/partner4.svg" alt="EmphaSoft">
-                                    </a>
-                                </li>
-
-                                <li class="slide swiper-slide">
-                                    <a href="#">
-                                        <img class="slide__image" src="/img/partner4.svg" alt="EmphaSoft">
+                                        <img class="slide__image" src="img/partner4.svg" alt="EmphaSoft">
                                     </a>
                                 </li>
                             </ul>
+
+                            <button class="swiper-button-prev"></button>
+                            <button class="swiper-button-next"></button>
+
+                            <div class="swiper-pagination"></div>
                         </div>
-
-                                                 
-                        <ul class="slider__controls swiper-navigation">
-                            <li class="controls-item">
-                              <button class="controls-item__btn controls-item__btn--next" type="button" aria-label="Перейти к предыдущему слайду"></button>
-                            </li>
-                
-                            <li class="controls-item">
-                              <button class="controls-item__btn controls-item__btn--next" type="button" aria-label="Перейти к следующему слайду"></button>
-                            </li>
-                        </ul>
-
-                        <!-- <button class="swiper-button-next" type="button" aria-label="Перейти к предыдущему слайду">111</button>
-                        <button class="swiper-button-prev" type="button" aria-label="Перейти к следующему слайду">222</button> -->
-
-                        <ol class="slider__pager swiper-pagination">
-                            <li class="pager-item">
-                                <button class="pager-item__link pager-item__link--active"
-                                type="button" 
-                                data-slide-to="1" 
-                                aria-label="Перейти к слайду номер 1">
-                                </button>
-                            </li>
-                
-                            <li class="pager-item">
-                                <button class="pager-item__link"
-                                type="button" 
-                                data-slide-to="2" 
-                                aria-label="Перейти к слайду номер 2">
-                                </button>
-                            </li>
-                
-                            <li class="pager-item">
-                                <button class="pager-item__link"
-                                type="button"
-                                data-slide-to="3" 
-                                aria-label="Перейти к слайду номер 3">
-                                </button>
-                            </li> 
-                            
-                            <li class="pager-item">
-                                <button class="pager-item__link"
-                                type="button"
-                                data-slide-to="4" 
-                                aria-label="Перейти к слайду номер 4">
-                                </button>
-                            </li>
-                        </ol>
                     </div>
+
                 </div>
-            </div>
         </section>
 
         <section id="js-features" class="features">
@@ -269,7 +213,7 @@
     
     <footer class="footer">
         <div class="container">
-            <img class="footer__logo" src="/img/logo-footer.svg" alt="Webim" />
+            <img class="footer__logo" src="img/logo-footer.svg" alt="Webim" />
 
             <ul class="social__list">
                 <li class="social-item">
@@ -301,9 +245,9 @@
 
 
 
-    <script src="/js/swiper.js"></script>
+    <script src="js/swiper.js"></script>
     
-    <script src="/js/main.js" defer></script>
-
+    <script src="js/main.js" defer></script>
+    
 </body>
 </html>
