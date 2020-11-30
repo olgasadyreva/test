@@ -1,0 +1,110 @@
+@import '../variables';
+@import '../mixins';
+
+.main {
+    background: linear-gradient(180deg, #F5FBFD -2.67%, rgba(245, 251, 253, 0) 100%);
+}
+
+.functionality {
+    padding: 60px 30px;
+    
+    @media (max-width: 1200px) {
+        padding: 60px 20px;
+    }
+}
+
+.title {
+    @include reset;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.title--functionality {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    color: $grey-text;
+    margin-bottom: 0;
+}
+
+.functionality__list {
+    @include reset;
+    @include flex-center;
+    align-items: baseline;
+    list-style: none;
+
+    @media (max-width: 1024px) {
+        flex-wrap: wrap;
+    }
+}
+
+.functionality__item {
+    min-height: 232px;
+    flex-basis: 25%;
+    padding-top: 240px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 161px 160px;
+
+    @media (max-width: 1024px) {
+        flex-basis: 48%;
+    }
+
+    @media (max-width: 768px) {
+        flex-basis: 100%;
+        background-size: 100% 100%;
+        min-height: 380px;
+        padding-top: 370px;
+    }
+}
+
+.functionality__item--access {
+    background-image: url("/img/icon1.svg");
+    
+}
+
+.functionality__item--create {
+    background-image: url("/img/icon2.svg");
+}
+
+.functionality__item--analyse {
+    background-image: url("/img/icon3.svg");
+}
+.functionality__item--present {
+    background-image: url("/img/icon4.svg");
+}
+
+.functionality__title {
+    @include reset;
+    padding: 0 20px;
+    font-family: Sunflower;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22.5px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+
+.functionality__title--access {
+    padding: 0 50px;
+
+    @media (max-width: 768px) {
+        padding: 0 5px;
+    }
+}
+
+.functionality__title--create {
+    padding: 0 35px;
+
+    @media (max-width: 768px) {
+        padding: 0 5px;
+    }
+}
+

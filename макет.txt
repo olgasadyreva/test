@@ -1,0 +1,202 @@
+https://www.figma.com/file/3lkd4sGEzMSz1C0bhNFALQ/test?node-id=1%3A2
+
+
+Меню  Main Features Item Partners F.A.Q.
+/* Main */
+
+position: absolute;
+width: 35px;
+height: 20px;
+left: 1012px;
+top: 51px;
+
+font-family: Sunflower;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+display: flex;
+align-items: flex-end;
+text-align: right;
+
+color: #305F6D;
+для активного пункта меню #46B4D4;
+
+/* Header */
+position: absolute;
+width: 132px;
+height: 53px;
+left: 318.72px;
+top: 238px;
+
+font-family: Sunflower;
+font-style: normal;
+font-weight: bold;
+font-size: 42px;
+line-height: 52px;
+/* identical to box height */
+
+
+color: #305F6D;
+
+/* Lorem irure fugiat cupidatat duis mollit commodo. Eu cillum ea reprehenderit elit laboris do exercitation laborum sit elit incididunt aute fugiat consectetur. */
+position: absolute;
+width: 398px;
+height: 78px;
+left: 318.72px;
+top: 306px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+
+letter-spacing: 0.03em;
+
+color: #8CA0A6;
+
+/* Watch the video to find out more */ ссылка
+position: absolute;
+width: 246px;
+height: 26px;
+left: 318.72px;
+top: 402.8px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+
+letter-spacing: 0.03em;
+
+color: #46B4D5;
+
+3 фоновых изображения
+
+
+/* Vector */
+
+position: absolute;
+width: 511px;
+height: 395px;
+left: 902.22px;
+top: 141.71px;
+
+background: linear-gradient(0deg, rgba(15, 119, 178, 0.2), rgba(15, 119, 178, 0.2)), url(image.png);
+
+
+<svg width="445" height="398" viewBox="0 0 445 398" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M142.876 27.8915C209.57 -1.04267 286.909 -12.06 347.456 18.5649C408.91 49.648 436.159 113.988 442.514 179.448C448.834 244.546 436.505 316.806 380.898 363.02C328.287 406.743 253.527 399.176 186.178 392.48C124.941 386.392 62.9266 373.269 29.2693 328.062C-5.51772 281.338 -6.33691 219.462 15.1313 162.739C37.1324 104.608 81.5354 54.5032 142.876 27.8915Z" fill="#22CBFF" fill-opacity="0.3"/>
+</svg>
+/* Vector */
+
+position: absolute;
+width: 454.01px;
+height: 405px;
+left: 855.85px;
+top: 233.19px;
+
+background: rgba(34, 203, 255, 0.3);
+transform: rotate(-20.26deg);
+
+2 секция
+/* Functionality and features */ заголовок
+position: absolute;
+width: 1104px;
+height: 26px;
+left: 318px;
+top: 673px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: 26px;
+/* identical to box height, or 93% */
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #8CA0A6;
+
+/* Access data from  over 30,0000 global  stations */ подпись под иконками
+position: absolute;
+width: 241px;
+height: 69px;
+left: 328px;
+top: 915px;
+
+font-family: Sunflower;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #305F6D;
+
+иконка1
+
+
+иконка2
+
+
+иконка3
+
+иконка 4
+
+
+3 секция
+заголовок
+/* We want the best value for you: */
+position: absolute;
+width: 385px;
+height: 35px;
+left: 900px;
+top: 1103px;
+
+font-family: Sunflower;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 35px;
+/* identical to box height */
+
+color: #305F6D;
+
+пункты списка
+/* 1. Are you willing to spend money? */
+position: absolute;
+width: 450px;
+height: 25px;
+left: 900px;
+top: 1167px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height, or 139% */
+
+color: #305F6D;
+
+Our partners - слайдер
+
+
+
+Our features - аккордеон
+
+
+
+
+
+
+

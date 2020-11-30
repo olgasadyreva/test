@@ -1,0 +1,124 @@
+@import '../variables';
+@import '../mixins';
+
+.anketa {
+    background-color: $white;
+    box-shadow: 0px 27px 80px rgba(25, 141, 203, 0.07), 0px 6.0308px 17.869px rgba(25, 141, 203, 0.0417275), 0px 1.79553px 5.32008px rgba(25, 141, 203, 0.0282725);
+    border-radius: 15px;
+    background-image: url("/img/bg-form.svg");
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+    padding: 60px 60px 60px 550px;
+    max-width: 1104px;
+    margin: 0 auto;
+    
+    @media (max-width: 1000px) {
+        background-image: none;
+        padding: 40px;
+        width: 100%;
+        //text-align: center;
+      }
+      @media (max-width: 768px) {
+        padding: 20px;
+        width: 90%;
+        //text-align: center;
+      }
+}
+
+.form {
+    margin: 0 auto;
+    
+
+    @media (max-width: 1000px) {
+        width: 600px;
+      }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+    
+}
+
+.form__title {
+    @include reset;
+    font-family: Sunflower;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.radio {
+    display: none;
+}
+
+.fieldset {
+    border: none;
+    margin-bottom: 25px;
+
+    @media (max-width: 520px) {
+        @include flex-center;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.legend {
+    margin-bottom: 15px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.label {
+    padding: 5px 20px;
+    color: $grey-text;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    border-radius: 6px;
+    border: 1px solid #d6e8f0;
+    margin-right: 15px;
+}
+
+.radio + .label {
+    @media (max-width: 520px) {
+        margin-bottom: 20px;
+    }
+}
+
+.radio:checked + .label {
+    background-color: $bg-blue;
+    color: $white;
+}
+
+.btn {
+    border: none;
+    outline: none;
+}
+
+.btn--submit {
+    padding: 3px 40px;
+    background-color: $bg-section;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    border-radius: 6px;
+    border: 1px solid $dark-grey;
+    color: $dark-grey;
+    margin-left: 15px;
+}
+
+.btn--submit:hover {
+    background-color: darken($bg-section, 20%);
+    transition: background-color 2s ease-out;
+
+}

@@ -1,0 +1,246 @@
+@import '../variables';
+@import '../mixins';
+
+
+.partners {
+    padding-top: 110px;
+    padding-bottom: 70px;
+}
+
+.partners .container{
+  //position: relative;
+  //max-width: 1104px;
+  padding: 0px;
+}
+
+.title--partners {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $grey-text;
+    margin-bottom: 60px;
+}
+
+.swiper-container {
+    padding-top: 0;
+    position: relative;
+    width: 1104px;
+  }
+
+
+  .swaper-navigation {
+    width: 1104px;
+  }
+  
+  .swiper-slide {
+    width: 250px;
+    //min-height: 320px;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after{
+      //display: none;
+  }
+  
+  
+  
+  .slider {
+    position: relative;
+    max-width: 1104px;
+    //min-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 93px;
+  
+    @media (max-width: 1200px) {
+      //width: 944px;
+      //margin-bottom: 90px; 
+    }
+    @media (max-width: 1023px) {
+     // width: 280px;
+     // margin-bottom: 35px;
+    }
+  }
+  
+
+  .swiper-wrapper {
+    position: relative;
+    max-width: 1104px;
+    margin: 0 auto;
+  }
+
+  .slider__list {
+    @include flex-center;
+    @include reset;
+    max-width: 1104px;
+    list-style: none;
+    
+  
+    @media (max-width: 1200px) {
+      //width: 944px;
+      //margin-bottom: 89px;
+    }
+    @media (max-width: 1023px) {
+      //width: 280px;
+      //min-height: 292px;
+      //margin-bottom: 24px;
+    }
+  }
+  
+  .slide {
+    @include flex-center($dir: column);
+    width: 250px;
+    //flex-shrink: 0;
+    //margin-right: 25px;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  
+    /* &:nth-child(n + 3) {
+      @media (max-width: 1200px) {
+        display: none;
+        margin-right: 0;
+      }
+    } */
+  
+    /* &:nth-child(n + 2) {
+      @media (max-width: 1023px) {
+        display: none;
+      }
+    }  */
+  
+    @media (max-width: 1200px) {
+      width: 455px;
+      margin-right: 34px;
+    }
+    @media (max-width: 1023px) {
+      width: 280px;
+    }
+  }
+ 
+  .slide__img {
+    width: 100%;
+    min-height: 50px; /*если картинка не загрузится*/
+    min-width: 165px;  /*если картинка не загрузится*/
+    margin-bottom: 20px;
+    background-color: #cccccc; /*подложка под картинку*/
+  
+    @media (max-width: 1200px) {
+      min-height: 358px; /*если картинка не загрузится*/
+      min-width: 455px;  /*если картинка не загрузится*/
+      margin-bottom: 0;
+    }
+    @media (max-width: 1023px) {
+      width: 100%;
+      min-height: 252px; /*если картинка не загрузится*/
+      min-width: 280px;  /*если картинка не загрузится*/
+      margin-bottom: 2px;
+    }
+  }
+  
+  .slider__controls {
+    @include flex-center;
+    @include reset;
+    width: 1104px;
+    //width: 100%;
+    margin-top: -55px;
+    list-style: none;
+  
+    @media (max-width: 1290px) {
+      display: none;
+    }
+  }
+  
+  .controls-item {
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    //margin-top: -55px;
+  }
+  
+  .controls-item__btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-size: 20px 20px;
+    border: none;
+    z-index: 10;
+  }
+  
+  .controls-item__btn--prev {
+    left: -40px;
+    background-image: url("/img/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+  }
+  
+  .controls-item__btn--next {
+    right: -40px;
+    background-image: url("/img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+  }
+  
+  .slider__pager {
+    display: block;
+  
+    @media (max-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding-left: 0;
+    }
+    @media (max-width: 1023px) {
+      padding: 5px 0;
+    }
+  }
+
+  .pager-item {
+    @media (max-width: 1200px) {
+      margin-right: 30px;
+      list-style-type: none;
+    }
+    @media (max-width: 1023px) {
+      margin-right: 16px;
+    }
+  
+    &:last-child {
+      @media (max-width: 1200px) {
+        margin-right: 0;
+      }
+    }
+  }
+  
+  .pager-item__link {
+    @media (max-width: 1200px) {
+      width: 18px;
+      height: 18px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      background-color: $grey;
+    }
+    @media (max-width: 1023px) {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  
+  .pager-item__link--active {
+    @media (max-width: 1200px) { 
+      background-color:$bg-blue;
+    }
+  }
+ 
+ 
+
+

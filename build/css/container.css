@@ -1,0 +1,16 @@
+.container {
+  width: 1104px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 1024px;
+    padding: 0 40px; } }
+
+@media (max-width: 1023px) {
+  .container {
+    width: 320px;
+    padding: 0 20px; } }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRhaW5lci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBYTtFQUNiLGNBQWM7RUFDZCxlQUFlLEVBQUE7O0FBR2pCO0VBQ0U7SUFDRSxhQUFhO0lBQ2IsZUFBZSxFQUFBLEVBQ2hCOztBQUdIO0VBQ0U7SUFDRSxZQUFZO0lBQ1osZUFBZSxFQUFBLEVBQ2hCIiwiZmlsZSI6ImNvbnRhaW5lci5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcbiAgd2lkdGg6IDExMDRweDtcbiAgbWFyZ2luOiAwIGF1dG87XG4gIHBhZGRpbmc6IDAgMTVweDtcbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6IDEyMDBweCkge1xuICAuY29udGFpbmVyIHtcbiAgICB3aWR0aDogMTAyNHB4O1xuICAgIHBhZGRpbmc6IDAgNDBweDtcbiAgfVxufVxuXG5AbWVkaWEgKG1heC13aWR0aDogMTAyM3B4KSB7XG4gIC5jb250YWluZXIge1xuICAgIHdpZHRoOiAzMjBweDtcbiAgICBwYWRkaW5nOiAwIDIwcHg7XG4gIH1cbn0iXX0= */

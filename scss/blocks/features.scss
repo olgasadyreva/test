@@ -1,0 +1,120 @@
+@import '../variables';
+@import '../mixins';
+
+.features {
+    padding: 65px 0 90px 0;
+    margin: 0 auto;
+    background-color: $bg-section;
+}
+
+.features .container {
+    width: 90%;
+}
+
+.title--features {
+    @include reset;
+    font-family: Sunflower;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: $dark-grey;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.features__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $grey-text;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.tab__element{
+    padding: 20px 25px;
+    border-top: 1px solid $grey;
+
+    @media (max-width: 768px) {
+        padding: 20px 0;
+    }
+}
+.tab__element .tab__pan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tab__pan .tab__title{
+    @include reset;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: $dark-grey;
+    padding: 0 5px;
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+        font-size: 16px;
+      }
+
+}
+.tab__pan .tab__btn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("/img/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 10px;
+    width: 20px;
+    height: 13px;
+}
+
+ .open {
+    transform-origin: center center;
+    transform:rotate(180deg);
+}
+
+.tab__element .tab__content{
+    padding: 20px 0;
+    animation: animate .7s;
+}
+
+.tab__text {
+    @include reset;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $grey-text;
+
+}
+
+.hideText{
+    display: none;
+}
+
+@keyframes animate{
+    from{
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="build/fonts/Roboto.woff2" as="font">
+    <link rel="preload" href="build/fonts/Sunflower-Medium.woff2" as="font">
+    <link rel="preload" href="build/fonts/Sunflower-Bold.woff2" as="font">
+    <link rel="stylesheet" type="text/css" href="build/css/swiper.css"> 
+    <link rel="stylesheet" type="text/css" href="build/css/style.css">
+    <title>Webim</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top js-header__top">
+            <img class="header__logo" src="img/logo.svg" alt="Webim" />
+
+            <button 
+				class="header__burger js-header__burger"
+				aria-label="Показать меню"
+				aria-expanded="false"
+				aria-controls="nav-mobile">
+            </button>
+
+            <nav d="nav-mobile" class="nav__list js-nav__list">
+                <a class="nav__link js-nav__link" href="#js-main">Main</a>
+
+                <a class="nav__link js-nav__link" href="#js-features">Features</a>
+
+                <a class="nav__link js-nav__link" href="#js-item">Item</a>
+
+                <a class="nav__link js-nav__link" href="#js-partners">Partners</a>
+
+                <a class="nav__link js-nav__link" href="#">F.A.Q.</a>
+            </nav>
+        </div>
+
+        <div class="header__content">
+            <div class="container">
+                <h1 class="header__title">Header</h1>
+
+                <p class="header__text">Lorem irure fugiat cupidatat duis mollit commodo. Eu cillum ea reprehenderit elit laboris do exercitation laborum sit elit incididunt aute fugiat consectetur.</p>
+    
+                <a class="header__link" href="#">Watch the video to find out more</a>
+
+                <img class="header__img" src="img/header-img.svg" alt="header-img" />
+            </div>
+        </div>
+    </header>
+
+    <main id="js-main" class="main">
+        <section class="functionality">
+            <div class="container">
+                <h2 class="title title--functionality">Functionality and features</h2>
+
+                <ul class="functionality__list">
+                    <li class="functionality__item functionality__item--access">
+                        <h3 class="functionality__title functionality__title--access">Access data from over 30,0000 global stations</h3>
+                    </li>
+
+                    <li class="functionality__item functionality__item--create">
+                        <h3 class="functionality__title functionality__title--create">Create your own library of data</h3>
+                    </li>
+
+                    <li class="functionality__item functionality__item--analyse">
+                        <h3 class="functionality__title functionality__title--analyse">Analyse your data</h3>
+                    </li>
+
+                    <li class="functionality__item functionality__item--present">
+                        <h3 class="functionality__title">Present your data</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="js-item" class="anketa">
+            <form class="form" name="form" method="post" action="https://echo.htmlacademy.ru">
+                <h4 class="form__title">We want the best value for you:</h4>
+    
+                <fieldset class="fieldset">
+                    <legend class="legend">1.  Are you willing to spend money?</legend>
+
+                    <input id="many-yes" class="radio" type="radio" name="many" value="yes" checked>
+                    <label class="label" for="many-yes">Yes</label>
+
+                    <input id="many-no" class="radio" type="radio" name="many" value="no">
+                    <label class="label" for="many-no">No</label>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend class="legend">2.  Who are you?</legend>
+
+                    <input id="individual" class="radio" type="radio" name="who" value="individual" checked>
+                    <label class="label" for="individual">Individual</label>
+
+                    <input id="student" class="radio" type="radio" name="who" value="student">
+                    <label class="label" for="student">Student</label>
+
+                    <input id="user" class="radio" type="radio" name="who" value="user">
+                    <label class="label" for="user">Company user</label>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend class="legend">3.  What sort of data are you working with?</legend>
+
+                    <input id="meteorological" class="radio" type="radio" name="data" value="meteorological" checked>
+                    <label class="label" for="meteorological">Meteorological</label>
+
+                    <input id="outher" class="radio" type="radio" name="date" value="outher">
+                    <label class="label" for="outher">Outher</label>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend class="legend">4.  Wind Speed Data:</legend>
+
+                    <input id="my-data" class="radio" type="radio" name="wind" value="my-data" checked>
+                    <label class="label" for="my-data">I have my own</label>
+
+                    <input id="outher-data" class="radio" type="radio" name="wind" value="outher-data">
+                    <label class="label" for="outher-data">I want to find quality wind speed data </label>
+                </fieldset>
+
+                <button class="btn btn--submit" type="submit">Send</button>
+            </form>
+        </section>
+
+        <section id="js-partners" class="partners">
+            <div class="container">
+
+                <h2 class="title title--partners">Our partners</h2>
+
+                <div class="slider">
+                   
+                        
+                  
+
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <ul class="slider__list">
+                                <li class="slide swiper-slide">
+                                    <a href="#">
+                                        <img class="slide__image" src="/img/partner1.svg" alt="QUBE renewables">
+                                    </a>
+                                </li>
+
+                                <li class="slide swiper-slide">
+                                    <a href="#">
+                                        <img class="slide__image" src="/img/partner2.svg" alt="aardvark">
+                                    </a>
+                                </li>
+            
+                                <li class="slide swiper-slide">
+                                    <a href="#">
+                                        <img class="slide__image" src="/img/partner3.svg" alt="EXELLENCH">
+                                    </a>
+                                </li>
+            
+                                <li class="slide swiper-slide">
+                                    <a href="#">
+                                        <img class="slide__image" src="/img/partner4.svg" alt="EmphaSoft">
+                                    </a>
+                                </li>
+
+                                <li class="slide swiper-slide">
+                                    <a href="#">
+                                        <img class="slide__image" src="/img/partner4.svg" alt="EmphaSoft">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                                                 
+                        <ul class="slider__controls swiper-navigation">
+                            <li class="controls-item">
+                              <button class="controls-item__btn controls-item__btn--next" type="button" aria-label="Перейти к предыдущему слайду"></button>
+                            </li>
+                
+                            <li class="controls-item">
+                              <button class="controls-item__btn controls-item__btn--next" type="button" aria-label="Перейти к следующему слайду"></button>
+                            </li>
+                        </ul>
+
+                        <!-- <button class="swiper-button-next" type="button" aria-label="Перейти к предыдущему слайду">111</button>
+                        <button class="swiper-button-prev" type="button" aria-label="Перейти к следующему слайду">222</button> -->
+
+                        <ol class="slider__pager swiper-pagination">
+                            <li class="pager-item">
+                                <button class="pager-item__link pager-item__link--active"
+                                type="button" 
+                                data-slide-to="1" 
+                                aria-label="Перейти к слайду номер 1">
+                                </button>
+                            </li>
+                
+                            <li class="pager-item">
+                                <button class="pager-item__link"
+                                type="button" 
+                                data-slide-to="2" 
+                                aria-label="Перейти к слайду номер 2">
+                                </button>
+                            </li>
+                
+                            <li class="pager-item">
+                                <button class="pager-item__link"
+                                type="button"
+                                data-slide-to="3" 
+                                aria-label="Перейти к слайду номер 3">
+                                </button>
+                            </li> 
+                            
+                            <li class="pager-item">
+                                <button class="pager-item__link"
+                                type="button"
+                                data-slide-to="4" 
+                                aria-label="Перейти к слайду номер 4">
+                                </button>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="js-features" class="features">
+            <h3 class="title title--features">Our features</h3>
+
+            <p class="features__text">Lorem irure fugiat cupidatat duis mollit commodo. Eu cillum ea reprehenderit elit laboris do exercitation laborum sit elit incididunt aute fugiat consectetur.</p>
+
+            <div class="container">
+                <div class="tab__element">
+                    <div class="tab__pan">
+                        <h4 class="tab__title">Lorem irure fugiat cupidatat duis mollit commodo?</h4>
+                        <button class="tab__btn"></button>
+                    </div>
+
+                    <div class="tab__content hideText">
+                        <p class="tab__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugiat debitis voluptatibus in, rem nihil itaque deserunt facere porro laborum.</p>
+                    </div>
+                </div>
+
+                <div class="tab__element">
+                    <div class="tab__pan">
+                        <h4 class="tab__title">Commodo nisi aliqua proident consequat consequat?</h4>
+                        <button class="tab__btn"></button>
+                    </div>
+
+                    <div class="tab__content hideText">
+                        <p class="tab__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugiat debitis voluptatibus in, rem nihil itaque deserunt facere porro laborum.</p>
+                    </div>
+                </div>
+
+                <div class="tab__element">
+                    <div class="tab__pan">
+                        <h4 class="tab__title">Sunt veniam voluptate reprehenderit consectetur eiusmod quis?</h4>
+                        <button class="tab__btn"></button>
+                    </div>
+
+                    <div class="tab__content hideText">
+                        <p class="tab__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugiat 
+                           debitis voluptatibus in, rem nihil itaque deserunt facere porro laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <img class="footer__logo" src="/img/logo-footer.svg" alt="Webim" />
+
+            <ul class="social__list">
+                <li class="social-item">
+                    <a class="social-item__icon social-item__icon--facebook"
+                       href="#" 
+                       target="_blank" 
+                       aria-label="Мы в Facebook">
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a class="social-item__icon social-item__icon--youtube"
+                       href="#" 
+                       target="_blank" 
+                       aria-label="Мы на YouTube">
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a class="social-item__icon social-item__icon--instagram"
+                       href="#" 
+                       target="_blank" 
+                       aria-label="Мы в Instagram">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script src="/js/swiper.js"></script>
+    
+    <script src="/js/main.js" defer></script>
+
+</body>
+</html>
